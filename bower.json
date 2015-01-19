@@ -1,0 +1,10 @@
+{
+  "name": "rusic-theme-rusic-theme-competition",
+  "version": "1.0.0",
+  "private": "true",
+  "dependencies": {
+    "jquery-legacy": "jquery#1.10",
+    "bootstrap": "~3.3.0",
+    "share-bar": "~3.0.4"
+  }
+}

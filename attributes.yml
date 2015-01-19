@@ -1,0 +1,45 @@
+logo_url:
+  value: "http://placehold.it/400x200&text=rusic-theme-competition"
+  help_text: "The URL of the logo to use on your site"
+strapline:
+  value: "Your amazing strapline here..."
+  help_text: "The strapline that goes along with your logo"
+background_color:
+  value: "#3498DB"
+  help_text: "The color of the website background"
+foreground_color:
+  value: "#fff"
+  help_text: "The color of the website foreground"
+banner_url_pre_entering:
+  value: "http://placehold.it/1200x400&text=Win a prize"
+  help_text: "The URL of the banner image before entering the competition"
+banner_url_post_entering:
+  value: "http://placehold.it/1200x400&text=Thank you"
+  help_text: "The URL of the banner image after entering the competition"
+header_text:
+  value: "Win a big thing that is amazing… Just click one of the buttons below to enter."
+  help_text: "Describe the prize and a little instruction on what to do"
+footer_text:
+  value: "We’ll be picking the winners on the 1st of January 2015. Good Luck."
+  help_text: "When will the competition end & any further details."
+terms:
+  value: ""
+  help_text: "Enter your terms and conditions here"
+multiplier:
+  value: "3"
+  help_text: "How many extra entries users should get for referrals"
+social_messaging:
+  value: "I've just entered the Rusic competition to with all the things."
+  help_text: "The message that will be shown when a user clicks to share to a social network."
+thankyou_text:
+  value: "Thank you! You’ve entered the competition!"
+  help_text: "The text shown after the user has entered the competition"
+text_color:
+  value: "#333"
+  help_text: "The color of the text"
+ga_code:
+  value: ""
+  help_text: "Your Google Anylitics tracking code. Should look something like this UA-12345678-9"
+font_stack:
+  value: '"Helvetica Neue",Helvetica,Arial,sans-serif'
+  help_text: "The CSS font-family to use in your theme."
