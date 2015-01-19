@@ -78,4 +78,5 @@ gulp.task "watch", ->
     "**/*.scss"
   ], ["styles"]
 
+gulp.task "build", ["scripts", "styles"]
 gulp.task "default", ["scripts", "styles", "watch"]
