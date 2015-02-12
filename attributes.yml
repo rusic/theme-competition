@@ -82,3 +82,6 @@ ga_code:
 font_stack:
   value: '"Helvetica Neue",Helvetica,Arial,sans-serif'
   help_text: "The CSS font-family to use in your theme."
+require_dob:
+  value: "false"
+  help_text: "Require DOB in entry form"
