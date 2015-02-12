@@ -1,3 +1,4 @@
+{% assign total_ideas = space.ideas | size %}
 <a href="{{space.permalink }}">
   <img src="{{ space.banner_url_post_entering }}">
 </a>
@@ -7,13 +8,16 @@
 
   <hr>
 
-  <h4>You have {{ idea.referrals | times:space.multiplier | plus:1 | pluralize: 'entry', 'entries' }} so far. There are {{ space.ideas | size | minus: 1 }} other {{ space.ideas | size | minus: 1 | pluralize_without_count: 'entry' }}.</h4>
+  <h4>You have {{ idea.referrals | times:space.multiplier | plus:1 | pluralize: 'entry', 'entries' }} so far.
+  {% if total_ideas > 1 %}
+    There are {{ space.ideas | size | minus: 1 }} other {{ space.ideas | size | minus: 1 | pluralize_without_count: 'entry' }}.</h4>
+  {% endif %}
 
   <h6>Want more chances of winning? Spread the word…</h6>
 
   <br>
   <p class="badge">Share this link</p>
-  <pre>http://<script type="text/javascript">document.write(location.host);</script>{{ idea.referral_link }}</pre>
+  <pre>http://{{ host }}{{ idea.referral_link }}</pre>
 
   <div id="fb-root"></div>
 
@@ -21,8 +25,8 @@
   <p class="badge">or share to</p>
   <div class="share-bar" data-url="{{ space.permalink }}" data-image-url="http://placehold.it/500x500"></div>
   <br>
-  {% if space.multiplier > 0 %}
-    <p>With each referral you will get <b>{{space.multiplier}} more {{ space.multiplier | pluralize_without_count: 'entry' }}</b>.</p>
+  {% if space.multiplier | to_number > 0 %}
+    <p>With each referral you will get <b>{{space.multiplier}} more {{ space.multiplier | to_number | pluralize_without_count: 'entry' }}</b>.</p>
   {% endif %}
 </div>
 
