@@ -21,7 +21,9 @@
   <p class="badge">or share to</p>
   <div class="share-bar" data-url="{{ space.permalink }}" data-image-url="http://placehold.it/500x500"></div>
   <br>
-  <p>With each referral you will get <b>{{space.multiplier}} more {{ 3 | pluralize_without_count: 'entry' }}</b>.</p>
+  {% if space.multiplier > 0 %}
+    <p>With each referral you will get <b>{{space.multiplier}} more {{ space.multiplier | pluralize_without_count: 'entry' }}</b>.</p>
+  {% endif %}
 </div>
 
 <script>
