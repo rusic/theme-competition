@@ -2,7 +2,7 @@
   <img src="{{ space.banner_url_pre_entering }}">
 </a>
 
-{% if current_user %}
+{% if current_user or space.guest_ideas %}
   <h4 class="text--centered">Enter Competition</h4>
 
   {% if idea.errors.size > 0 %}
@@ -38,6 +38,17 @@
             <label for="idea[custom][surname]">Surname</label>
             <input type="text" class="form-control" name="idea[custom][surname]" placeholder="Enter surname" required>
           </div>
+          {% if space.guest_ideas %}
+            <div class="form-group">
+              <label for="identity[email]">Email</label>
+              <input type="email" class="form-control" name="identity[email]" placeholder="Enter email" required>
+            </div>
+          {% else %}
+            <div class="form-group">
+              <label for="idea[custom][email]">Email</label>
+              <input type="email" class="form-control" name="idea[custom][surname]" placeholder="Enter email" required>
+            </div>
+          {% endif %}
           <div class="form-group">
             <label for="idea[custom][dob]">Date of Birth</label>
             <input type="date" class="form-control" name="idea[custom][dob]" placeholder="Enter DOB" required>
