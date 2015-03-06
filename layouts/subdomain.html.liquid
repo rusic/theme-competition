@@ -31,18 +31,14 @@
         font-family: {{ space.font_stack }};
       }
 
-      html {
-        min-height: 100%;
-      }
-
-      body {
+      .page {
         background-image: url({{ space.background_image }});
-        background-size: cover;
+        background-color: {{ space.background_color }};
       }
     </style>
   </head>
 
-  <body style="background-color: {{ space.background_color }};">
+  <body class="page">
     <div class="container">
       <div class="card" style="background-color: {{ space.foreground_color }};">
 
