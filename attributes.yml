@@ -85,6 +85,12 @@ font_stack:
 require_dob:
   value: "false"
   help_text: "Require DOB in entry form"
+require_phone_number:
+  value: "false"
+  help_text: "Require phone number in entry form"
+require_post_code:
+  value: "false"
+  help_text: "Require post code in entry form"
 background_image:
   value: ""
   help_text: "The URL of the background image"

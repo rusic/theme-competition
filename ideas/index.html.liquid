@@ -61,6 +61,18 @@
               <input type="date" class="form-control" name="idea[custom][dob]" placeholder="Enter DOB" required>
             </div>
           {% endif %}
+          {% if space.require_phone_number == "true" %}
+            <div class="form-group">
+              <label for="idea[custom][phone_number]">Phone number</label>
+              <input type="tel" class="form-control" name="idea[custom][phone_number]" placeholder="Enter your phone number" required>
+            </div>
+          {% endif %}
+          {% if space.require_post_code == "true" %}
+            <div class="form-group">
+              <label for="idea[custom][post_code]">Postcode</label>
+              <input type="text" class="form-control" name="idea[custom][post_code]" placeholder="Enter your post code" required>
+            </div>
+          {% endif %}
           <div class="checkbox">
             <label>
               <input type="checkbox" name="idea[custom][terms]" required> I agree to the <a href="{{space.permalink}}/pages/terms">Terms &amp; Conditions</a>
