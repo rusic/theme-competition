@@ -85,3 +85,6 @@ font_stack:
 require_dob:
   value: "false"
   help_text: "Require DOB in entry form"
+background_image:
+  value: ""
+  help_text: "The URL of the background image"

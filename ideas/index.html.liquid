@@ -5,6 +5,14 @@
 {% if current_user or space.guest_ideas %}
   <h4 class="text--centered">Enter Competition</h4>
 
+  <p>v2</p>
+
+  {{ 'flash' | notifications }}
+
+  {% for error in flash %}
+      {{ error }}
+  {% endfor %}
+
   {% if idea.errors.size > 0 %}
     <ul class="errors">
       {% for error in idea.errors %}
