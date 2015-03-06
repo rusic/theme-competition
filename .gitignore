@@ -2,6 +2,7 @@
 node_modules
 *.sass-cache*
 .rusic.yml
+bower_components
 
 assets/style.css
 assets/script.js
