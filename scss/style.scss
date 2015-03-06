@@ -55,6 +55,12 @@
   padding: $spacing;
 }
 
+@media screen and (max-width: 768px) {
+  [class*="col-"]{
+    margin-bottom: 15px;
+  }
+}
+
 img {
   max-width: 100%;
 }

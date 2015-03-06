@@ -11,7 +11,7 @@ foreground_color:
   value: "#fff"
   help_text: "The color of the website foreground"
 banner_url_pre_entering:
-  value: "http://placehold.it/1200x400&text=Win a prize"
+  value: "http://placehold.it/727x800&text=Win a prize"
   help_text: "The URL of the banner image before entering the competition"
 banner_url_post_entering:
   value: "http://placehold.it/1200x400&text=Thank you"
