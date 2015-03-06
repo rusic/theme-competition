@@ -15,13 +15,13 @@ paths = {
   sass: "scss/style.scss"
   js: "js/**/*.js"
   vendorJS: [
-    "components/jquery-legacy/jquery.js"
-    "components/bootstrap/dist/js/bootstrap.js"
-    "components/share-bar/dist/js/share.bar.js"
+    "bower_components/jquery-legacy/jquery.js"
+    "bower_components/bootstrap/dist/js/bootstrap.js"
+    "bower_components/share-bar/dist/js/share.bar.js"
   ]
   vendorCSS: [
-    "components/bootstrap/dist/css/bootstrap.css"
-    "components/share-bar/dist/css/share.bar.css"
+    "bower_components/bootstrap/dist/css/bootstrap.css"
+    "bower_components/share-bar/dist/css/share.bar.css"
   ]
 }
 
