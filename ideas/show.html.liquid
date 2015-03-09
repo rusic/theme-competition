@@ -1,3 +1,5 @@
+{% capture referral_link %}http://{{host}}{{idea.referral_link}}{% endcapture %}
+
 {% assign total_ideas = space.ideas | size %}
 <a href="{{space.permalink }}">
   <img src="{{ space.banner_url_post_entering }}">
@@ -17,7 +19,12 @@
 
   <br>
   <p class="badge">Share this link</p>
-  <pre>http://{{ host }}{{ idea.referral_link }}</pre>
+  <input
+    type="text"
+    value="{{ referral_link }}"
+    class="form-control"
+    data-select
+    readonly>
 
   <div id="fb-root"></div>
 
