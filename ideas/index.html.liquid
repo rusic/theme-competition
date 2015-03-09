@@ -1,10 +1,10 @@
 {% if current_user or space.guest_ideas %}
-  <h4 class="text--centered">Enter Competition</h4>
+  <h2 class="text--centered">Enter Competition</h2>
 
   {{ 'flash' | notifications }}
 
   {% for error in flash %}
-      {{ error }}
+    {{ error }}
   {% endfor %}
 
   {% if idea.errors.size > 0 %}
