@@ -22,8 +22,10 @@
   {% endif %}
 
   {% if current_user.ideas.size > 0 %}
-    <p class="text--centered">You have already entered this competition.<br>
-    <a href="{{ current_user.ideas[0].permalink }}">Check your referrals</a></p>
+    <div class="text-center">
+      <p>You have already entered this competition.</p>
+      <a href="{{ current_user.ideas[0].permalink }}" class="btn btn-primary">Check your referrals</a>
+    </div>
   {% else %}
 
     <div class="row">
