@@ -1,21 +1,26 @@
 logo_url:
   value: "http://placehold.it/400x200&text=rusic-theme-competition"
   help_text: "The URL of the logo to use on your site"
+  type: "file"
 strapline:
   value: "Your amazing strapline here..."
   help_text: "The strapline that goes along with your logo"
 background_color:
   value: "#3498DB"
   help_text: "The color of the website background"
+  type: "color"
 foreground_color:
   value: "#fff"
   help_text: "The color of the website foreground"
+  type: "color"
 banner_url_pre_entering:
   value: "http://placehold.it/727x800&text=Win a prize"
   help_text: "The URL of the banner image before entering the competition"
+  type: "file"
 banner_url_post_entering:
   value: "http://placehold.it/1200x400&text=Thank you"
   help_text: "The URL of the banner image after entering the competition"
+  type: "file"
 header_text:
   value: "Win a big thing that is amazing… Just click one of the buttons below to enter."
   help_text: "Describe the prize and a little instruction on what to do"
@@ -76,6 +81,7 @@ thankyou_text:
 text_color:
   value: "#333"
   help_text: "The color of the text"
+  type: "color"
 ga_code:
   value: ""
   help_text: "Your Google Anylitics tracking code. Should look something like this UA-12345678-9"
@@ -94,3 +100,4 @@ require_post_code:
 background_image:
   value: ""
   help_text: "The URL of the background image"
+  type: "file"
